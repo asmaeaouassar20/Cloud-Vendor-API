@@ -1,5 +1,6 @@
 package com.algostyle.Cloud_Vendor_API.service.impl;
 
+import com.algostyle.Cloud_Vendor_API.exception.CloudVendorNotFoundException;
 import com.algostyle.Cloud_Vendor_API.model.CloudVendor;
 import com.algostyle.Cloud_Vendor_API.repository.CloudVendorRepository;
 import com.algostyle.Cloud_Vendor_API.service.CloudVendorService;
@@ -36,11 +37,18 @@ public class CloudVendorServiceImpl implements CloudVendorService {
 
     @Override
     public CloudVendor getCloudVendor(String cloudVendorId) {
+        if(cloudVendorRepository.findById(cloudVendorId).isEmpty())
+           throw new CloudVendorNotFoundException("Requested Cloud Vendor does not exist");
         return cloudVendorRepository.findById(cloudVendorId).get();
     }
 
     @Override
     public List<CloudVendor> getAllCloudVendors() {
         return cloudVendorRepository.findAll();
+    }
+
+    @Override
+    public List<CloudVendor> getCloudVendorByName(String name) {
+       return cloudVendorRepository.findByVendorName(name);
     }
 }

@@ -2,7 +2,10 @@ package com.algostyle.Cloud_Vendor_API.controller;
 
 
 import com.algostyle.Cloud_Vendor_API.model.CloudVendor;
+import com.algostyle.Cloud_Vendor_API.response.ResponseHandler;
 import com.algostyle.Cloud_Vendor_API.service.CloudVendorService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,8 +23,11 @@ public class CloudVendorAPIController {
 
 
     @GetMapping("{vendorId}")
-    public CloudVendor getCloudVendorDetails(@PathVariable("vendorId") String vendorId){
-        return cloudVendorService.getCloudVendor(vendorId);
+    public ResponseEntity<Object> getCloudVendorDetails(@PathVariable("vendorId") String vendorId){
+
+        return ResponseHandler.responseBuilder("returning requested cloud vendor",
+                HttpStatus.OK,
+                cloudVendorService.getCloudVendor(vendorId));
     }
     @GetMapping()
     public List<CloudVendor> getAllCloudVendorDetails(){
