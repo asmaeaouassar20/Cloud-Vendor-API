@@ -14,3 +14,7 @@
 ### exception/CloudVendorAlreadyExists
 - Cette classe ```CloudVendorAlreadyExists``` est une exception personnalisée qui est utilisée pour signaler qu'une tentative de création ou d'ajout d'un VendorCloud  échoue parce que ce fournisseur existe déjà dans le système.
 - Elle étend ```RuntimeException```.
+
+### exception/CloudVendorException
+- La classe ```CloudVendorException``` est une exception personnalisée utilisée pour encapsuler les informations liées aux erreurs survenant dans l'application.
+- Elle permet de fournir un message explicatif, une exception sous-jacente (cause) et un code de statut HTTP approprié pour indiquer l'état de l'erreur.
