@@ -48,3 +48,9 @@ Pour Représenter notre entité de **fournisseur cloud** dans l'application.
 - Cette classe implémente l'interface ```CloudVendorService``` et fournit une logique métier pour gérer les opérations CRUD.
 - Elle est caractérisée par l'utilisation de ```CloudVendorRepository``` pour la persistence des données.
 - Elle est caractérisée aussi par la gestion des exceptions via ```CloudVendorAlreadyExists``` et ```CloudVendorNotFoundException``` pour gérer les cas d'erreur.
+
+## Testing
+### GET
+<img src="https://github.com/user-attachments/assets/6d868522-9b55-4e2a-a996-7b5fc3a6b854">
+# Testing
+#
