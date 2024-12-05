@@ -28,3 +28,11 @@ On a crée cette Exception qui sera levée lorsqu'un fournisseur Clous n'est pas
 
 ### model/CloudVendor
 Pour Représenter notre entité de **fournisseur cloud** dans l'application.
+
+### response/ResponseHandler
+- La classe ```ResponseHandler``` est utilisée pour centraliser la gestion des réponses HTTP.
+- Elle permet de construire des réponses structurées qui incluent un message descriptif, un code de statut HTTP et des données sous forme d'objet.
+- Elle est caractérisée par l'utilisation de la méthode statique ```responseBuilder```, qui prend en charge la création d'une réponse sous la forme d'une ```ResponseEntity```.
+- Cette classe est essentielle pour standardiser la manière dont les réponses sont renvoyées aux clients, assurant une gestion cohérente des erreurs et des données dans l'API.
+
+*En résumé*, elle facilite le contrôle de la réponse HTTP tout en encapsulant les informations pertinentes dans un format structuré et compréhensible.
