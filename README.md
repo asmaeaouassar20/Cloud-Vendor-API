@@ -22,4 +22,6 @@
 ### exception/CloudVendorExceptionHandlerController
 - On a crée la classe ```CloudVendorExceptionHandlerController```  comme **gestionnaire global des exceptions dans notre application Spring Boot**
 - Elle utilise l'annotation ```@ControllerAdvice``` pour capturer et gérer des exceptions spécifiques, afin de fournir des réponses HTTP appropriées aux erreurs.
-### exception/CloudVendorExceptionHandlerController
+
+### exception/CloudVendorNotFoundException
+On a crée cette Exception qui sera levée lorsqu'un fournisseur Clous n'est pas trouvé dans le système
