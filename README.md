@@ -25,3 +25,6 @@
 
 ### exception/CloudVendorNotFoundException
 On a crée cette Exception qui sera levée lorsqu'un fournisseur Clous n'est pas trouvé dans le système
+
+### model/CloudVendor
+Pour Représenter notre entité de **fournisseur cloud** dans l'application.
