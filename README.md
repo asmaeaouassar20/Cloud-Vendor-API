@@ -1,3 +1,5 @@
+# Architecture et Implémentation des API REST
+## CONTROLLER
 ### controller/CloudVendorAPIController
 - Cette classe est un contrôleur d'API REST, qui gère les opérations CRUD pour les "Cloud Vendors" en fournissant plusieurs points de terminaison (endpoints) de l'API.
 - Structure de l'API
@@ -11,6 +13,7 @@
   - Cela garantit une gestion uniforme des réponses, avec un message personnalisé, un statut HTTP, et les données associées.
 - La classe est annotée avec ```@RestController```, ce qui signiife que c'est un contôleur de type REST, qui est une partie essentielle de l'architecture microservices dans Spring Boot.
 
+## EXCEPTION
 ### exception/CloudVendorAlreadyExists
 - Cette classe ```CloudVendorAlreadyExists``` est une exception personnalisée qui est utilisée pour signaler qu'une tentative de création ou d'ajout d'un VendorCloud  échoue parce que ce fournisseur existe déjà dans le système.
 - Elle étend ```RuntimeException```.
@@ -26,9 +29,11 @@
 ### exception/CloudVendorNotFoundException
 On a crée cette Exception qui sera levée lorsqu'un fournisseur Clous n'est pas trouvé dans le système
 
+## MODEL
 ### model/CloudVendor
 Pour Représenter notre entité de **fournisseur cloud** dans l'application.
 
+## RESPONSE
 ### response/ResponseHandler
 - La classe ```ResponseHandler``` est utilisée pour centraliser la gestion des réponses HTTP.
 - Elle permet de construire des réponses structurées qui incluent un message descriptif, un code de statut HTTP et des données sous forme d'objet.
@@ -38,6 +43,7 @@ Pour Représenter notre entité de **fournisseur cloud** dans l'application.
 <img src="https://github.com/user-attachments/assets/74b58cef-e5c8-4f50-ac74-98545f41eeee"><br>
 *En résumé*, elle facilite le contrôle de la réponse HTTP tout en encapsulant les informations pertinentes dans un format structuré et compréhensible.
 
+## SERVICE
 ### service/impl/CloudVendorServiceImpl
 - Cette classe implémente l'interface ```CloudVendorService``` et fournit une logique métier pour gérer les opérations CRUD.
 - Elle est caractérisée par l'utilisation de ```CloudVendorRepository``` pour la persistence des données.
