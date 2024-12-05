@@ -35,4 +35,5 @@ Pour Représenter notre entité de **fournisseur cloud** dans l'application.
 - Elle est caractérisée par l'utilisation de la méthode statique ```responseBuilder```, qui prend en charge la création d'une réponse sous la forme d'une ```ResponseEntity```.
 - Cette classe est essentielle pour standardiser la manière dont les réponses sont renvoyées aux clients, assurant une gestion cohérente des erreurs et des données dans l'API.
 
+<img src="https://github.com/user-attachments/assets/74b58cef-e5c8-4f50-ac74-98545f41eeee"><br>
 *En résumé*, elle facilite le contrôle de la réponse HTTP tout en encapsulant les informations pertinentes dans un format structuré et compréhensible.
