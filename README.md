@@ -37,3 +37,8 @@ Pour Représenter notre entité de **fournisseur cloud** dans l'application.
 
 <img src="https://github.com/user-attachments/assets/74b58cef-e5c8-4f50-ac74-98545f41eeee"><br>
 *En résumé*, elle facilite le contrôle de la réponse HTTP tout en encapsulant les informations pertinentes dans un format structuré et compréhensible.
+
+### service/impl/CloudVendorServiceImpl
+- Cette classe implémente l'interface ```CloudVendorService``` et fournit une logique métier pour gérer les opérations CRUD.
+- Elle est caractérisée par l'utilisation de ```CloudVendorRepository``` pour la persistence des données.
+- Elle est caractérisée aussi par la gestion des exceptions via ```CloudVendorAlreadyExists``` et ```CloudVendorNotFoundException``` pour gérer les cas d'erreur.
