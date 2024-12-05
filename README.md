@@ -18,3 +18,8 @@
 ### exception/CloudVendorException
 - La classe ```CloudVendorException``` est une exception personnalisée utilisée pour encapsuler les informations liées aux erreurs survenant dans l'application.
 - Elle permet de fournir un message explicatif, une exception sous-jacente (cause) et un code de statut HTTP approprié pour indiquer l'état de l'erreur.
+
+### exception/CloudVendorExceptionHandlerController
+- On a crée la classe ```CloudVendorExceptionHandlerController```  comme **gestionnaire global des exceptions dans notre application Spring Boot**
+- Elle utilise l'annotation ```@ControllerAdvice``` pour capturer et gérer des exceptions spécifiques, afin de fournir des réponses HTTP appropriées aux erreurs.
+### exception/CloudVendorExceptionHandlerController
