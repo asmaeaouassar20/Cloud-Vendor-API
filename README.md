@@ -49,8 +49,15 @@ Pour Représenter notre entité de **fournisseur cloud** dans l'application.
 - Elle est caractérisée par l'utilisation de ```CloudVendorRepository``` pour la persistence des données.
 - Elle est caractérisée aussi par la gestion des exceptions via ```CloudVendorAlreadyExists``` et ```CloudVendorNotFoundException``` pour gérer les cas d'erreur.
 
-## Testing
+# Testing
+- Les testing dans les applications Spring Boot MVC consiste à tester les contrôleurs via ```MockMvc```, qui simule des requêtes HTTP et vérifie les réponses (statut, contenu, modèle, etc).
+- On utilise généralement ```WebMvcTest``` pour tester les contrôleurs spécifiquement, et ```MockMvc``` pour effectuer les tests sans démarrer un serveur complet.
+- Les assertions se font avec des **matchers** comme ```status()```, ```view()``` et ```model()```.
+- **ResultMatcher** est une interface utilisée dans les tests Spring MVC pour valider les résultats des requêtes HTTP simulées avec ```MockMvc```. Elle permet de vérifier des éléments comme le statut HTTP, la vue, le modèle ou le contenu de la réponse.
+- **Le cas nominal :** est le scénario où tout se passe bien, comme prévu (C'est le comportement attendu dans des conditions normales)
+## controller
 ### GET
 <img src="https://github.com/user-attachments/assets/6d868522-9b55-4e2a-a996-7b5fc3a6b854">
-# Testing
-#
+
+### DELETE
+<img src="https://github.com/user-attachments/assets/d193896c-9a0e-4a12-9750-14cb34e980a9">
