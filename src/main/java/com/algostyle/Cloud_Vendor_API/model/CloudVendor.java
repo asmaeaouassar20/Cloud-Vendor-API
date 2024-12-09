@@ -1,9 +1,7 @@
 package com.algostyle.Cloud_Vendor_API.model;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity // Obligatoire pour indiquer que la classe représente une entité JPA
 //@Table(name="cloud_vendor_info") // Optionnelle, permet de définir le nom de la table dans la BD
